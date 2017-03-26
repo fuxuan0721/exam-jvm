@@ -29,3 +29,23 @@
 
 ## 其他
 * 如果您的构建和运行过程比较难以理解的话，建议您修改 Readme 的这个地方添加一些说明文字。
+
+启动工程时，会自动添加5条交易记录，也可以查出新添加的记录	
+
+/**
+	 * 插入数据	
+   * @param status 交易状态
+	 * @param type 交易类型
+	 * @param money 金额
+	 * @param currency 币种
+	 * @param userId 用户ID
+	 */
+	@RequestMapping("/newTrade/{status}/{type}/{count}/{currency}/{userId}")
+  
+  	/**
+	 * 
+	 * @param status 0 查询所有记录  ,1 支付等待,2成功支付,3失败支付
+	 * @return
+	 */
+	@RequestMapping("/getTradeList/{status}")
+  
